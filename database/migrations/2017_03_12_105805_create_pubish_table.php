@@ -15,6 +15,16 @@ class CreatePubishTable extends Migration
     {
         Schema::create('publishs', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->string('country',100);
+            $table->string('city',100);
+            $table->string('address');
+            $table->string('phone1');
+            $table->string('phone2');
+            $table->string('phone3');
+            $table->string('fax');
+            $table->string('email');
+            $table->string('website');
             $table->timestamps();
         });
     }

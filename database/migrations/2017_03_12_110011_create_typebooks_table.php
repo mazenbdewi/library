@@ -15,6 +15,7 @@ class CreateTypebooksTable extends Migration
     {
         Schema::create('typebooks', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('type',100);
             $table->timestamps();
         });
     }
